@@ -1,0 +1,92 @@
+{
+  "student": {
+    "name": "Abubakar Yusuf Evuti",
+    "registration_number": "U21CO2033",
+    "course": "COEN554 – Web Programming",
+    "role": "Future Computer Engineer",
+    "email": "yusufthegreatt@gmail.com",
+    "phone": "+234 903 270 3778",
+    "location": "Nigeria"
+  },
+  "education": [
+    {
+      "institution": "Ahmadu Bello University, Zaria",
+      "program": "B.Eng. Computer Engineering",
+      "period": "2021 – Present"
+    },
+    {
+      "institution": "Ahmadu Bello University, Zaria",
+      "program": "Cisco Programme",
+      "period": "2023"
+    },
+    {
+      "institution": "Federal Science and Technical College, Kuta",
+      "program": "Secondary / Technical Education",
+      "period": "2015 – 2017"
+    }
+  ],
+  "skills": {
+    "Programming & Web Development": [
+      "HTML5",
+      "CSS3",
+      "Python",
+      "SQL",
+      "Web Development",
+      "Git & GitHub",
+      "REST API Concepts"
+    ],
+    "Data & Business Intelligence": [
+      "Data Analysis",
+      "Microsoft Excel",
+      "Pandas",
+      "NumPy",
+      "Power BI",
+      "Data Visualization"
+    ],
+    "Machine Learning & Engineering Technologies": [
+      "Machine Learning Fundamentals",
+      "Digital Systems",
+      "Computer Architecture",
+      "Embedded Systems Fundamentals",
+      "Engineering Problem Solving"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Smart Curtains Control System",
+      "description": "An engineering automation project focused on controlling curtain movement electronically using an embedded controller, motor driver and mechanical pulley arrangement.",
+      "tags": [
+        "ESP32",
+        "Embedded Systems",
+        "Automation",
+        "Motor Control"
+      ]
+    },
+    {
+      "title": "Automatic Height Measurement System",
+      "description": "A measurement-oriented engineering project designed to automate the process of determining a person's height using electronic sensing and control techniques.",
+      "tags": [
+        "Sensors",
+        "Measurement",
+        "Embedded Systems",
+        "Automation"
+      ]
+    },
+    {
+      "title": "Water Level Control",
+      "description": "An automated control project designed to monitor water level and regulate the water supply according to defined level conditions.",
+      "tags": [
+        "Control Systems",
+        "Sensors",
+        "Automation",
+        "Engineering"
+      ]
+    }
+  ],
+  "hobbies": [
+    "Cars & automotive technology",
+    "Football",
+    "Video editing and content creation",
+    "Technology and engineering projects"
+  ]
+}

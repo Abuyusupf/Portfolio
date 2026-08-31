@@ -1,0 +1,36 @@
+COEN554 – WEB PROGRAMMING
+TECHNICAL REPORT
+Personal Portfolio Website — Abubakar Yusuf Evuti
+Reg. No.: U21CO2033
+
+1. VISUAL DESIGN RATIONALE
+
+The portfolio uses a mobile-first, dark interface with a restrained accent colour to establish visual hierarchy and professional contrast. The layout is built with semantic HTML5 and pure CSS3 using Flexbox and CSS Grid. Repeated content is organized into cards, timelines, skill groups and project panels so that information can be scanned easily. Responsive media queries reduce multi-column layouts to single-column layouts on smaller screens. The navigation is linked across all pages, while the mobile navigation uses HTML and CSS rather than client-side scripting. The design intentionally avoids external layout frameworks so the structure and responsive behaviour remain transparent and standards-focused.
+
+2. DATA SCHEMA DESIGN
+
+The project contains `data/data.json`, which models the portfolio's content entities. The data includes the student profile, education records, skill categories, projects and hobbies. Keeping structured content in JSON separates data from presentation and demonstrates a simple static data architecture. The JSON is valid application data and can be extended later without changing the overall directory structure.
+
+3. JSON-LD AND WEB STANDARDS
+
+Each HTML page contains JSON-LD metadata in the document head using Schema.org vocabulary to describe the portfolio owner as a Person. JSON-LD is data, not executable JavaScript; it is included because the project specification explicitly requires semantic linked data. The visible site itself contains no JavaScript source or DOM manipulation.
+
+4. HTTP/HTTPS AND MIME TYPES
+
+When the static site is deployed, a web server receives an HTTP or HTTPS request for an HTML, CSS or JSON resource and returns the requested representation with an appropriate status code and content type. HTTPS adds encryption and server authentication through TLS, which is preferable for a publicly deployed portfolio. Typical MIME types include `text/html` for HTML documents, `text/css` for stylesheets and `application/json` for JSON data. Browsers use these media types to determine how returned resources should be interpreted and rendered. GitHub Pages can serve the static assets over HTTPS, making it suitable for a small academic portfolio.
+
+5. CMS SELECTION JUSTIFICATION (300–500 WORDS)
+
+A manual XHTML/HTML5, CSS and JSON architecture is appropriate for this academic portfolio because the content is relatively small, structured and changed infrequently. The site contains a fixed collection of pages such as Home, About Me, Education, Skills, Projects, Hobbies, CV and Contact. In this situation, writing semantic markup directly provides precise control over page structure, accessibility, responsive styling and standards compliance. It also makes the relationship between source files and browser output clear, which is valuable for a Web Programming assignment.
+
+A CMS such as WordPress would become more attractive when the website has many contributors, frequent content updates, non-technical editors or a large catalogue of posts. A CMS can provide an administrative dashboard, database-backed content storage, authentication, media management, plugins and reusable templates. These features reduce the need for an editor to modify HTML files manually. For example, if a department needed dozens of staff members to publish news every day, a CMS could centralize content management and permissions.
+
+However, those advantages also introduce additional infrastructure and maintenance requirements. A CMS normally involves a larger software stack, database or managed storage, themes, extensions, updates and security considerations. For a small personal portfolio, much of that complexity would provide limited benefit. The manual architecture is lightweight, portable and easy to host as static files. It also reduces the attack surface associated with server-side applications and third-party plugins.
+
+A web framework would be justified under different conditions. A framework becomes useful when the application needs dynamic routing, authentication, database operations, APIs, complex state management or server-side business logic. For this portfolio, those requirements are not necessary. The site can therefore remain a static collection of HTML5, CSS and JSON assets.
+
+Migration to a CMS would be justified if the portfolio grows into a frequently updated professional publication, requires multiple editors, needs role-based content management, or contains hundreds of dynamic records. Until those conditions arise, the manual architecture provides an efficient, maintainable and technically transparent solution.
+
+6. CONCLUSION
+
+The portfolio satisfies the static multi-page architecture by using linked HTML5 pages, pure CSS, JSON data, JSON-LD metadata and a standardized directory structure. The implementation deliberately excludes executable JavaScript and content-management software in accordance with the assignment constraints.
